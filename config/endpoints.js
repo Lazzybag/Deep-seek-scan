@@ -1,0 +1,3 @@
+// Moralis API for Polygon DEX pairs (free tier)
+export const MORALIS_API = "https://deep-index.moralis.io/api/v2";
+export const MORALIS_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub25jZSI6IjA2MmUxNTI5LTRjY2MtNDQ2OS1hZDJkLTIyYzVmZGY4Mzk0YSIsIm9yZ0lkIjoiMzc5MDA0IiwidXNlcklkIjoiMzg5MDU1IiwidHlwZUlkIjoiN2I1YzM0Y2MtYjU5Zi00NDU5LWI1Y2MtYjE3YjU0Y2U2OGU2IiwidHlwZSI6IlBST0pFQ1QiLCJpYXQiOjE3MDE5NjU5NDksImV4cCI6NDg1NzcyNTk0OX0.5u8Z7xNqk0ddnwJGxqZ_0RqgS0a6S6uCv6J0J8w9j9E"; // Public demo key

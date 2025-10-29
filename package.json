@@ -1,0 +1,16 @@
+{
+  "name": "deep-sick-scan",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Scanner for vulnerable DeFi pools < $50k TVL",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "scan": "node index.js",
+    "test": "node tests/test_scanner.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0"
+  }
+}
