@@ -11,7 +11,7 @@ export class PolygonscanService {
     async throttle() {
         const now = Date.now();
         const timeSinceLastCall = now - this.lastCallTime;
-        if (timeSinceLastCall < 200) { // 5 calls/sec = 200ms between calls
+        if (timeSinceLastCall < 200) {
             await new Promise(resolve => setTimeout(resolve, 200 - timeSinceLastCall));
         }
         this.lastCallTime = Date.now();
@@ -28,10 +28,18 @@ export class PolygonscanService {
         };
 
         try {
-            const response = await axios.get(this.baseUrl, { params });
+            // V2 API uses different endpoint structure
+            const url = `${this.baseUrl}/${module}/${action}`;
+            const response = await axios.get(url, { 
+                params,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            console.log('🔍 V2 API Response Status:', response.data.status);
             return response.data;
         } catch (error) {
-            console.error(`Polygonscan API Error: ${error.message}`);
+            console.error(`Polygonscan V2 API Error: ${error.response?.data || error.message}`);
             return null;
         }
     }
