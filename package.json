@@ -1,16 +1,18 @@
 {
-  "name": "deep-sick-scan",
+  "name": "deep-seek-scan",
   "version": "1.0.0",
   "type": "module",
-  "description": "Scanner for vulnerable DeFi pools < $50k TVL",
-  "main": "index.js",
+  "description": "Advanced DeFi pool vulnerability scanner for Polygon",
+  "main": "scan_phase2.js",
   "scripts": {
-    "start": "node index.js",
-    "scan": "node index.js",
-    "test": "node tests/test_scanner.js"
+    "start": "node scan_phase2.js",
+    "scan": "node scan_phase2.js",
+    "dev": "node scan_phase2.js"
   },
+  "keywords": ["defi", "security", "polygon", "vulnerability", "scanner"],
+  "author": "Your Name",
+  "license": "MIT",
   "dependencies": {
-    "axios": "^1.6.0",
-    "dotenv": "^16.3.0"
+    "axios": "^1.6.0"
   }
 }
