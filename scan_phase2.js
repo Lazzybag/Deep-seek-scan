@@ -1,4 +1,4 @@
-import { AdvancedPoolScanner } from './src/scanner_phase2_fixed.js';
+import { AdvancedPoolScanner } from './src/scanner.js';
 
 async function main() {
     const scanner = new AdvancedPoolScanner();
